@@ -1,4 +1,9 @@
 # SSHSniffer
+
+Name: David Ehevich
+
+Name: Dvir Biton 
+
 ssh packet sniffer to detect fuzzing attacks
 
 How to run:
