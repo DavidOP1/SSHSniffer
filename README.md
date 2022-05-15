@@ -2,22 +2,16 @@
 
 Name: David Ehevich
 
-Name: Dvir Biton 
-
-ssh packet sniffer to detect fuzzing attacks
+Fuzzing detector via auth auth logs.
 
 How to run:
 
-*Firstly download all of the included libraries in the program(pyenchant & scappy), to be able to run the program.
+*Firstly download all of the included libraries in the program, to be able to run the program.
 
 *All of the files in the git repo must be downloaded into the same directory.
 
-*Run the main.py program first , this is the program which sniffs the SSH packets. Then run send_p.py program, this program sends the SSH packets for testing 
+*Run the FuzzingDetector.py program first , this program goes through auth.log , this log file logs every log on attempt , remotely or directy , so we check if there are any irregularities , for example : too many errors , connection closed , etc. As seend in the Fuzzing attack lab, when a fuzzing attack occurs , a spam of errors or other suspicious logs appear. Once we detect too many of these suspicious logs , we alert the user that a Fuzzing Attack is occuring, and the program will shut it self.
 
-Inside the the send function we can send what ever payload we want.
 
-Fuzzing detected:
-
-If Fuzzing attack is detected in the pay load of the ssh packet, The user will be notified via terminal that a Fuzzing attack has occured.
 
 
