@@ -2,7 +2,7 @@
 
 Name: David Ehevich
 
-Fuzzing detector via auth logs.
+Fuzzing detector via auth logs(auth.log).
 
 How to run:
 
